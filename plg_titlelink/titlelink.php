@@ -421,10 +421,14 @@ class plgSystemTitleLink extends JPlugin
                             $link = "<strong>";
                             $link .= "<a href=\"";
                             $link .= "index.php?option=com_content&amp;view=form&amp;layout=edit&amp;a_id=0";
-                            // pass on the title would be nicetohave:
-                            // $link .= "&amp;title=".base64encode($phrase);
+                            /** Pass the title would be nicetohave:
+                            // 
+                            $link .= "&amp;title=".base64encode($phrase);
                             // put then in components/com_content/tmpl/form/edit.php at line about 39
-                            // $this->formsetValue('title',null,base64_decode(JFactory::getApplication()->input->get("title",False)));
+                            // if($title=JFactory::getApplication()->input->get("title",False) {
+                            //     $this->formsetValue('title',null,base64_decode($title));
+                            // }
+                            */
                             
                             //$link .= "index.php?option=com_content&task=new&sectionid=";
                             // use current sectionid
