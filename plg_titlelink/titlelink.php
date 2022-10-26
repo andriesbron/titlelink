@@ -105,7 +105,8 @@ class plgSystemTitleLink extends JPlugin
     public function onAfterRender()
     {
         $app = JFactory::getApplication();
-        if ($app->isAdmin()) {
+        // https://github.com/joomla/joomla-cms/issues/24642#issuecomment-484899544
+        if ($app->isClient('administrator')) {
             return true;
         }
 
